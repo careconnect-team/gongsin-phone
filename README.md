@@ -1,8 +1,10 @@
-# 공신폰 설정 1.4.3
+# 공신폰 설정
 
-Galaxy 실기기 검증 전 테스트 APK입니다.
+현재 배포 버전: **1.4.3** · [전체 릴리스](https://github.com/careconnect-team/gongsin-phone/releases)
 
-[1.4.3 APK 다운로드](https://raw.githubusercontent.com/careconnect-team/gongsin-phone/04e03053199469dbc75f44f4f205fc5c42194b3f/gongsin-setup-1.4.3.apk)
+Galaxy 공기계에서 QR 등록과 앱 제한 동작을 확인한 테스트 APK입니다.
+
+[최신 APK 다운로드](https://github.com/careconnect-team/gongsin-phone/releases/latest/download/gongsin-setup.apk)
 
 ## 새 기기 초기 설정용 QR
 
@@ -10,7 +12,9 @@ Galaxy 실기기 검증 전 테스트 APK입니다.
 
 새 기기 또는 백업 후 초기화한 기기의 초기 설정에서 사용하세요. 일반 APK 설치만으로 기기 소유자 권한은 활성화되지 않습니다.
 
-이미 등록한 기기는 관리자 화면에서 학습 제한을 해제한 뒤 위 APK를 설치해 업데이트하세요. 기존 버전과 동일한 서명 인증서를 사용합니다. 실제 기기에서 업데이트와 설정 유지 여부를 확인해야 합니다.
+이 QR은 새 버전이 나와도 그대로 사용합니다. 등록할 때 항상 최신 릴리스의 APK를 내려받고, APK 파일 대신 서명 인증서로 진위를 확인합니다. 인쇄할 때는 가로세로 4cm 이상을 권장합니다.
+
+이미 등록한 기기는 관리자 화면에서 학습 제한을 해제한 뒤 위 최신 APK를 설치해 업데이트하세요. 기존 버전과 동일한 서명 인증서를 사용합니다.
 
 ## 1.4.3 변경 사항
 
@@ -35,8 +39,10 @@ Galaxy 실기기 검증 전 테스트 APK입니다.
 
 ## 검증
 
-1.4.3 APK 빌드, v2/v3 서명 검사, 1.4.2와 인증서 일치, 단위 테스트(Lockout·RecoveryCode·StudyMode), QR 생성·재인식, GitHub에 올린 APK와 QR 체크섬 일치를 확인했습니다.
+1.4.3 APK 빌드, v2/v3 서명 검사, 1.4.2와 인증서 일치, 단위 테스트(Lockout·RecoveryCode·StudyMode)를 확인했습니다. 고정 QR은 이미지 재인식, 고정 주소에서 내려받은 APK와 이 릴리스의 일치, 서명 인증서 일치를 확인했습니다.
 
-실기기 UI, 처음 열 때 자동 선택, 기본 앱 감지, 등록, 업데이트, 실제 차단·해제, TalkBack은 아직 미검증입니다.
+초기화한 Galaxy 공기계 여러 대에서 QR 등록(고정 QR 포함), 앱 제한 동작, 문자 속 링크가 열리지 않는 것을 확인했습니다. 기존 기기 업데이트 후 설정 유지와 TalkBack은 아직 확인하지 않았습니다.
 
 APK SHA-256: `dd41ec4ef477d760cd87131d1f2b50f9b3397dd2fb140fab7fec913200e5032a`
+
+서명 인증서 SHA-256: `073a1b17db54f6a79a78354795acb90a2e075efe67f6a644402c998cc53b1112`
